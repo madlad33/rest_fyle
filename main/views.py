@@ -1,7 +1,7 @@
 from .models import Branches, Banks
 from rest_framework import viewsets, mixins, status
 from rest_framework.pagination import LimitOffsetPagination, PageNumberPagination
-from .serializers import BranchSerializer, BankSerialzier, CustomSerializer
+from .serializers import BranchSerializer, BankSerialzier
 from rest_framework import filters
 from rest_framework.exceptions import NotFound
 from rest_framework.response import Response
