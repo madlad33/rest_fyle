@@ -143,6 +143,6 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
-    'https://bank-frontend-fyle.herokuapp.com/',
+    'https://bank-frontend-fyle.herokuapp.com',
 ]
 django_heroku.settings(locals())
