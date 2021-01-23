@@ -43,10 +43,11 @@ class BranchViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.Creat
             return Branches.objects.all()
 
 
-class BankBranchView(APIView):
+class BankBranchView(APIView,LimitOffsetPagination):
     """View to fetch data for our frontend table"""
     renderer_classes = [JSONRenderer]
-
+    limit_query_param = 'limit'
+    offset_query_param = 'offset'
     @method_decorator(cache_page(60 * 60 * 2))
     def get(self, request):
         branches = Branches.objects.select_related("bank_id").values("ifsc", "bank_id__name",

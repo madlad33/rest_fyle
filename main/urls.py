@@ -6,7 +6,7 @@ router.register('branches',views.BranchViewSet)
 
 urlpatterns = [
 path('',include(router.urls)),
-path('all/',views.BankBranchView.as_view()),
+# path('all/',views.BankBranchView.as_view()),
 
 
 ]
