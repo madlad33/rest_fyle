@@ -9,4 +9,6 @@
 - https://rest-fyle.herokuapp.com/api/branches/?search=PUNE
 - Here, replace PUNE with any information to return possible matches across all columns and all rows.
 
+# Database
+- Used AWS RDS to setup the database.
 
